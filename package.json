@@ -1,0 +1,17 @@
+{
+  "name": "nodecrypto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "boxen": "^2.1.0",
+    "cli-prompt": "^0.6.0",
+    "cryptr": "^4.0.2",
+    "opn": "^5.4.0"
+  }
+}
