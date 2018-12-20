@@ -1,3 +1,5 @@
+![nodeCrypto logo](https://www.storix.com/wp-content/uploads/2017/06/encryption-300x260.png)
+
 # nodeCrypto
 Ransomware written in NodeJs
 
