@@ -39,7 +39,7 @@ function generateId() {
 }
 function createConfig(data){
   var dateNow = Date.now();
-  var fileContent = '{"user":"'+require("os").userInfo().username+'","uid":"'+generateId()+'","date":"'+dateNow+'"}';
+  var fileContent = '{"user":"'+require("os").userInfo().username+'","uid":"'+generateId()+'","path":"'+websitePath+'","date":"'+dateNow+'"}';
   var filepath = "config.json";
  
   fs.writeFile(filepath, fileContent, (err) => {}); 
