@@ -30,7 +30,8 @@ The files at the root of the web server will encrypt and send to the server.
 
 ### Screenshot ### 
 
-Soon
+![Infection](https://i.imgur.com/eimEruy.png)
+![Infection](https://i.imgur.com/ZHUSlLF.png)
 
 ### To Do ###  
  - [x] Client (victim)
