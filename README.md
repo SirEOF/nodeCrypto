@@ -9,7 +9,8 @@
 *   [Screenshot](#screenshot "Screenshot")
 
 ### What is nodeCrypto? ###  
-Ransomware written in NodeJs
+nodeCrypt is a linux Ransomware written in NodeJs that encrypt predefined files.  
+This project was created for educational purposes, you are the sole responsible for the use of nodeCrypto.
 
 ### Install server ###  
 Upload all file of [server/](https://github.com/atmoner/nodeCrypto/tree/master/server) folder  on your webserver.  
