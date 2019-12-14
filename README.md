@@ -44,7 +44,7 @@ The files at the root of the web server will encrypt and send to the server.
 ![Infection](https://i.imgur.com/ZHUSlLF.png)
 
 ### To Do ###  
- - [ ] GUI exe creator
+ - [x] GUI exe creator
  	 - [x] Edit basic variable
 	 - [ ] Export cross-plateform
  - [x] Client (victim)
