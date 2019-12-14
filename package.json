@@ -1,19 +1,25 @@
 {
-  "name": "nodecrypto",
-  "version": "1.0.0",
+  "name": "nodeCrypto",
+  "version": "2.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron . --disable-gpu"
   },
-  "author": "",
-  "license": "ISC",
+  "repository": "https://github.com/atmoner/nodeCrypto",
+  "keywords": [
+    "ransomware",
+    "nodejs",
+    "crypto",
+    "gui"
+  ],
+  "author": "atmon3r",
+  "license": "CC0-1.0",
   "dependencies": {
-    "boxen": "^2.1.0",
-    "cli-prompt": "^0.6.0",
-    "cryptr": "^4.0.2",
-    "openurl": "^1.1.1",
-    "uniqid": "^5.0.3",
-    "request": "^2.88.0"
+    "nexe": "^3.3.2",
+    "write-json": "^3.0.1",
+    "electron": "^7.1.4",
+    "jquery": "^3.4.1",
+    "system-commands": "^1.1.7"
   }
 }

