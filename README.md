@@ -20,11 +20,13 @@ Edit [server/libs/db.php](https://github.com/atmoner/nodeCrypto/blob/master/serv
 ### Install and run ###  
 `git clone https://github.com/atmoner/nodeCrypto.git`  
 `cd nodeCrypto && npm install`  
+`cd sources && npm install`
+`cd .. && npm start`
 
-You must edit first variable in `index.js`  
-Once your configuration is complete, you can start the ransomware.  
+Once your configuration is complete, run compile!  
+You can start the ransomware.  
 
-`node index.js`
+`cd sources && ./output`
 
 The files at the root of the web server will encrypt and send to the server.  
 
