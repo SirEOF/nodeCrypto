@@ -45,7 +45,7 @@ The files at the root of the web server will encrypt and send to the server.
 
 ### To Do ###  
  - [ ] GUI exe creator
- 	 - [ ] Edit basic variable
+ 	 - [x] Edit basic variable
 	 - [ ] Export cross-plateform
  - [x] Client (victim)
 	 - [x] Encrypt webserver
