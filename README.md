@@ -4,13 +4,21 @@
 * * *
 
 *   [What is nodeCrypto?](#what-is-nodecrypto "What is nodeCrypto?")
+*   [Demo video](#demo-video "Demo video")
 *   [Install server](#install-server "Install server")
 *   [Install and run](#install-and-run "Install and run")
 *   [Screenshot](#screenshot "Screenshot")
 
+
+
+
+
 ### What is nodeCrypto? ###  
 nodeCrypt is a linux Ransomware written in NodeJs that encrypt predefined files.  
 This project was created for educational purposes, you are the sole responsible for the use of nodeCrypto.
+
+### Demo video ###  
+[![Demo video](https://img.youtube.com/vi/hUITpli8mbQ/0.jpg)](https://www.youtube.com/watch?v=hUITpli8mbQ)
 
 ### Install server ###  
 Upload all file of [server/](https://github.com/atmoner/nodeCrypto/tree/master/server) folder  on your webserver.  
@@ -20,8 +28,8 @@ Edit [server/libs/db.php](https://github.com/atmoner/nodeCrypto/blob/master/serv
 ### Install and run ###  
 `git clone https://github.com/atmoner/nodeCrypto.git`  
 `cd nodeCrypto && npm install`  
-`cd sources && npm install`
-`cd .. && npm start`
+`cd sources && npm install`  
+`cd .. && npm start`  
 
 Once your configuration is complete, run compile!  
 You can start the ransomware.  
@@ -31,7 +39,7 @@ You can start the ransomware.
 The files at the root of the web server will encrypt and send to the server.  
 
 ### Screenshot ### 
-
+![Compil](https://i.imgur.com/s355bWq.png)
 ![Infection](https://i.imgur.com/eimEruy.png)
 ![Infection](https://i.imgur.com/ZHUSlLF.png)
 
